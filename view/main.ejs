@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SFU or UBC</title>
+    <link rel="stylesheet" href="/css/main.css"></style>
+</head>
+<body>
+    
+    <header>
+        <div class="topnav">
+            <a class="active" href="/">Home</a>
+            <a href="/like">Like SFU</a>
+            <a href="/Unlike">Like UBC</a>
+          </div> 
+    </header>
+    <div class="main-header" style="text-align: center;">
+        <h1>HEY YOU! DO YOU LIKE SFU OR UBC?</h1>
+    </div>
+    <div class= "sfuimg">
+        <img src="https://the-peak.ca/wp-content/uploads/2014/04/Web-SFUvsUBC.jpg" alt="SFU VS UBC" style="margin-left: auto;
+        margin-right: auto; display: block; width: 50%;">
+    </div>
+    <div class="main">
+        <form action="/" method="POST" >
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname" required>
+
+            <label for="lname"> Last name: </label>
+            <input type="text" id="lname" name="lname" required> <br><br>
+
+            WHICH UNIVERSITY DO YOU LIKE?<br><br>
+
+            <input type="radio" id="SFU" name="university" value="SFU" required>
+            <label for="SFU">SFU</label>
+            <input type="radio" id="UBC" name="university" value="UBC" required>
+            <label for="UBC">UBC</label><br><br>
+
+            WHY DO YOU LIKE THAT UNIVERSITY?<br>
+            <textarea  class="txtarea" rows="3" name="description" style="height:50px;" > </textarea><br><br>
+            
+            <button type="submit" style="background-color: #008CBA; font-size: 20px; padding: 10px 28px;">
+            Submit
+            </button>
+        </form>
+    </div>
+
+
+</body>
+</html>
