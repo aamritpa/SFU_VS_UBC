@@ -2,7 +2,6 @@ const db= require('../util/database');
 exports.likeUsers=(req,res,next)=> {
     db.execute('Select * From sfu').then(rows =>{
         res.render('../view/like.ejs',{data: rows[0]});
-        console.log(rows[0]);
     }).catch(err=>{
         console.log(err);
     });
